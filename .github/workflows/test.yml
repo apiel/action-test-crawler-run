@@ -7,8 +7,8 @@ on:
 jobs:
   test-crawler:
 
-    runs-on: macos-latest
+    runs-on: ${{ github.event.client_payload.os }}
 
     steps:
-    - name: Enable safari driver
+    - name: Yoyoyo
       run: echo hello
