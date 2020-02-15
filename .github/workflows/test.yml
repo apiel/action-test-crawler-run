@@ -21,16 +21,16 @@ jobs:
     - name: Yoyoyo
       run: echo hello ubuntu
       
-  test-crawler-x:
-    runs-on: ${{ github.event.client_payload.os }}
+#  test-crawler-x:
+#    runs-on: ${{ github.event.client_payload.os }}
     
-    steps:
-    - name: Yoyoyo ${{ github.event.client_payload.os }}
-      run: echo hello x
-    - name: yo buntu
-      if: github.event.client_payload.os == 'ubuntu-latest'
-      run: echo hello x ubuntu
-    - name: yo osx
-      if: github.event.client_payload.os == 'macos-latest'
-      run: echo hello x osx
+#    steps:
+#    - name: Yoyoyo ${{ github.event.client_payload.os }}
+#      run: echo hello x
+#    - name: yo buntu
+#      if: github.event.client_payload.os == 'ubuntu-latest'
+#      run: echo hello x ubuntu
+#    - name: yo osx
+#      if: github.event.client_payload.os == 'macos-latest'
+#      run: echo hello x osx
       
