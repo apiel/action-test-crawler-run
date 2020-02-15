@@ -6,19 +6,17 @@ on:
 
 jobs:
   test-crawler-macOS:
-
-    runs-on: macos-latest
     if: github.event.client_payload.os == 'macos-latest'
+    runs-on: macos-latest
 
     steps:
     - name: Yoyoyo
       run: echo hello macOS
 
   test-crawler-ubuntu:
-
-    runs-on: ubuntu-latest
     if: github.event.client_payload.os == 'ubuntu-latest'
-
+    runs-on: ubuntu-latest
+    
     steps:
     - name: Yoyoyo
       run: echo hello ubuntu
