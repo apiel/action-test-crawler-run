@@ -1,0 +1,14 @@
+name: Test CI
+
+on:
+  repository_dispatch:
+    types: [test]
+
+jobs:
+  test-crawler:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Enable safari driver
+      run: echo hello
