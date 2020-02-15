@@ -5,11 +5,20 @@ on:
     types: [test]
 
 jobs:
-  test-crawler:
+  test-crawler-macOS:
 
     runs-on: macos-latest
     if: github.event.client_payload.os == 'macos-latest'
 
     steps:
     - name: Yoyoyo
-      run: echo hello
+      run: echo hello macOS
+
+  test-crawler-ubuntu:
+
+    runs-on: ubuntu-latest
+    if: github.event.client_payload.os == 'ubuntu-latest'
+
+    steps:
+    - name: Yoyoyo
+      run: echo hello ubuntu
